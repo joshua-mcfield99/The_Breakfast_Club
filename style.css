@@ -22,3 +22,224 @@
     src: url(./fonts/YuGothicUI-Regular.woff2), url(./fonts/YuGothicUI-Regular.woff), url(./fonts/YuGothicUI-Regular.svg), url(./fonts/YuGothicUI-Regular.eot), url(./fonts/YuGothicUI-Regular-02.ttf);
     font-weight: normal;
 }
+
+/* Resets / Base Styling*/
+
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Yu Gothic UI', serif;
+    font-size: 18px;
+}
+
+.section {
+    display: flex;
+    width: 100%;
+    height: 1080px;
+}
+
+
+
+/* Head */
+
+.head {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background-color: #FFC000;
+    display: flex;
+    flex-direction: row;
+    z-index: 8;
+}
+
+.logo {
+    width: 75%;
+    height: 100px;
+    display: flex;
+    font-family: 'antre', serfi;
+    font-size: 10px;
+    z-index: 5;
+    background-color: #FFC000;
+}
+
+.logo img {
+    margin: auto 0;
+    width: 25%;
+    height: fit-content;
+}
+
+.logotext {
+    display: flex;
+    width: 85%;
+    height: fit-content;
+    flex-wrap: nowrap;
+    margin: auto 0;
+}
+
+.logo-textp1 {
+    width: fit-content;
+    height: 22px;
+    margin: auto 8px;
+}
+
+.logo-textp2 {
+    width: fit-content;
+    height: 22px;
+    margin: auto 0;
+    color: #ffffff;
+}
+
+/* Nav */
+
+.deskNav {
+    display: none;
+}
+
+.nav {
+    width: 100%;
+}
+
+#menuToggle {
+    display: block;
+    position: absolute;
+    top:  40px;
+    right: 0px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #060123;
+    
+    transition: color 0.3s ease;
+}
+  
+  
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: relative;
+    top: -10px;
+    left: 80%;
+    
+    cursor: pointer;
+    
+    opacity: 0;
+    z-index: 3; 
+    
+    -webkit-touch-callout: none;
+}
+  
+#menuToggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 83%;
+    top: -34px;
+    border-radius: 3px;    
+    transform-origin: 4px 0px;
+    background-color: #ffffff;
+    z-index: 4;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+  
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+  
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+  
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #ffffff;
+}
+  
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+  
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+  
+#menu {
+    position: absolute;
+    top: 100%;
+    left: 3%;
+    width: 100%;
+    margin: -100px 0 0 -50px;
+    padding-top: 125px;
+    padding-bottom: 50px;
+    text-align: center;
+    z-index: 2;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    background-color: #FFC000;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+  
+#menu li {
+    position: relative;
+    width: 230px;
+    margin: 5px auto;
+    padding: 10px 0;
+    font-size: 22px;
+    font-family: 'Yu Gothic UI', serif;
+    color: #282828;
+}
+  
+#menu .top-space {
+    margin-top: 30%;
+}
+  
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+
+/* Main */
+
+/* Banner */
+
+.banner {
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.815)), url(./images/BannerTop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.banner h1 {
+    width: 85%;
+    margin: auto;
+    z-index: 4;
+    font-family: 'antre';
+    font-size: 3.5rem;
+    color: #ffffff;
+}
+
+/* About Us */
