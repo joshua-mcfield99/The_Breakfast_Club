@@ -12,4 +12,9 @@ It won't have any of said instagram or discord unless people actually want me to
 Created by Josh Field at the J.F Web Studio.
 
 Click the link below for my linkedIn :
+<<<<<<< HEAD
 https://www.linkedin.com/in/josh-mcfield-366875222/
+=======
+https://www.linkedin.com/in/josh-mcfield-366875222/
+>>>>>>> 8deb0abf7fb5afb5d75420f48e66637ff33d4cae
+
