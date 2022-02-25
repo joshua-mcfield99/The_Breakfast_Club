@@ -308,7 +308,7 @@ p {
     width: 85%;
     height: 520px;
     border: 1px solid #282828;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     border-radius: 54px;
     box-shadow: 20px 20px 30px #28282850;
 }
@@ -354,6 +354,7 @@ p {
     transition: all .7s ease-in-out;
     -moz-transition: all .7s ease-in-out;
     -webkit-transition: all .7s ease-in-out;
+    
 }
   
 .i-slide-container {
@@ -466,3 +467,103 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   background: #FFC000;
 }
 
+/* Join Us */
+
+.join {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.815)), url(./images/Join.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.new-sub {
+    width: 85%;
+    height: 424px;
+    min-width: 280px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #282828;
+    border-radius: 2.28rem;
+}
+
+.new-sub form {
+    width: 85%;
+    min-width: 230px;
+    margin: 0 auto;
+}
+
+.new-sub h3 {
+    width: 50%;
+    text-align: center;
+    margin: 10px auto 20px;
+    font-size: 1.2223rem;
+}
+
+.new-sub label {
+    margin: 0 9rem 0 0;
+    font-weight: normal;
+}
+
+.new-sub input {
+    width: 100%;
+    height: 2rem;
+    border-radius: 1.125em;
+    border: 1px solid #282828;
+    margin: 0.5rem 0;
+    font-family: 'Yu Gothic UI';
+    font-weight: normal;
+}
+
+.new-sub .sub-btn {
+    width: 100%;
+    height: 2.8329rem;
+    border-radius: 1.94rem;
+    background-color: #FFC000;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.disc-join {
+    width: 85%;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 50px;
+    background-color: #23272A;
+    border-radius: 2.28rem;
+}
+
+.disc-join img {
+    width: 85%;
+    margin: 20px auto;
+}
+
+.disc-join p {
+    width: 85%;
+    min-width: 250px;
+    margin: 10px auto;
+}
+
+.disc-join .arrow {
+    width: 10%;
+    margin: 20px auto 0;
+}
+
+.disc-join a {
+    width: 75%;
+    height: 2.5rem;
+    margin: 20px auto;
+    background-color: #5865F2;
+    border-radius: 1.94rem;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.disc-join a img {
+    width: 60%;
+    margin: auto;
+}
