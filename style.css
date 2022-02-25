@@ -452,6 +452,12 @@ input:checked + .slide-container .nav label { display: block; }
     display: inline-block;
     background: #d8d8d8;
 }
+
+@media screen and (min-width: 400px) {
+    .nav-dots .nav-dot {
+        top: -20px;
+    }
+}
   
 .nav-dots .nav-dot:hover {
     cursor: pointer;
@@ -502,13 +508,19 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     font-size: 1.2223rem;
 }
 
+a {
+    color: #FFC000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .new-sub label {
     margin: 0 9rem 0 0;
     font-weight: normal;
 }
 
 .new-sub input {
-    width: 100%;
+    width: 98%;
     height: 2rem;
     border-radius: 1.125em;
     border: 1px solid #282828;
@@ -524,6 +536,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     background-color: #FFC000;
     font-size: 1rem;
     font-weight: bold;
+    padding: 0;
 }
 
 .disc-join {
@@ -632,15 +645,25 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     width: 100%;
 }
 
+.foot-links .join-now {
+    width: 55%;
+    padding: 0.7rem 0;
+    border-radius: 1.94rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 50px;
+    background-color: #FFC000;
+    color: #282828;
+}
+
 a.disc-foot {
     width: 100%;
-    height: 2.5rem;
-    margin: 20px auto;
+    height: 2.8rem;
+    margin: 20px auto 30px;
     background-color: #5865F2;
     border-radius: 1.94rem;
     display: flex;
     text-align: center;
-    vertical-align: middle;
 }
 
 a.disc-foot img {
@@ -649,13 +672,45 @@ a.disc-foot img {
 }
 
 .copyright {
-    width: 85%;
+    width: 80%;
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
+    margin: 10px auto 50px;
 }
 
 .copyright p {
-    width: 90%;
-    margin: 0 auto 0 0;
-    font-size: 0.5rem;
+    width: 70%;
+    min-width: 190px;
+    max-width: 200px;
+    font-size: 0.7rem;
+    margin: 0 0 0 5px;
+}
+
+.copyright img {
+    width: 10%;
+    max-width: 20px;
+    height: fit-content;
+    margin: auto 0;
+}
+
+@media screen and (min-width: 599px) {
+    .copyright p {
+        width: 70%;
+        min-width: 190px;
+        max-width: 250px;
+    }
+
+    a.disc-foot {
+        width: 100%;
+        max-width: 212px;
+        height: 3rem;
+    }
+    
+    a.disc-foot img {
+        width: 80%;
+        margin: auto;
+    }
+
+    
+    
 }
