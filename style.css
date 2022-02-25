@@ -91,7 +91,7 @@ p {
     height: 100px;
     display: flex;
     font-family: 'antre', serfi;
-    font-size: 10px;
+    font-size: 0.55rem;
     z-index: 5;
     background-color: #FFC000;
 }
@@ -100,6 +100,7 @@ p {
     margin: auto 0;
     width: 25%;
     height: fit-content;
+    max-width: 100px;
 }
 
 .logotext {
@@ -270,6 +271,7 @@ p {
     color: #ffffff;
 }
 
+
 /* About Us */
 
 .about img {
@@ -279,12 +281,14 @@ p {
     margin: 0 auto 50px auto;
 }
 
+
 /* Our Mission */
 
 .ourMission {
     height: fit-content;
     min-height: 602px;
     background-color: #FFC000;
+    font-weight: lighter;
 }
 
 .ourMission img {
@@ -295,14 +299,6 @@ p {
 }
 
 /* Gallery */
-
-.tab-gallery {
-    display: none;
-}
-
-.desk-gallery {
-    display: none;
-}
 
 .mob-gallery {
     width: 85%;
@@ -370,6 +366,7 @@ p {
     position: absolute;
     top: 0;
     width: 100%;
+    max-height: 410px;
     border: none;
 }
 
@@ -473,6 +470,14 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   background: #FFC000;
 }
 
+@media screen and (min-width: 374px) {
+    .slide img {
+       top: -50px;
+    }
+}
+
+
+
 /* Join Us */
 
 .join {
@@ -487,6 +492,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     width: 85%;
     height: 424px;
     min-width: 280px;
+    max-width: 280px;
     margin: 0 auto 50px;
     display: flex;
     flex-direction: column;
@@ -547,6 +553,7 @@ a {
     margin: 0 auto 50px;
     background-color: #23272A;
     border-radius: 2.28rem;
+    max-width: 280px;
 }
 
 .disc-join img {
@@ -605,7 +612,10 @@ a {
     height: 5%;
     min-height: 60px;
     margin: 50px auto;
-    font-size: ;
+}
+
+.foot-log h1 {
+    font-size: 1.1rem;
 }
 
 .foot-log .logo-textp1 {
@@ -629,6 +639,7 @@ a {
 
 .social-links {
     width: 80%;
+    max-width: 255px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -637,6 +648,7 @@ a {
 
 .social-links a {
     width: 25%;
+    max-width: 64px;
     margin-right: 20px;
 
 }
@@ -647,6 +659,7 @@ a {
 
 .foot-links .join-now {
     width: 55%;
+    max-width: 175px;
     padding: 0.7rem 0;
     border-radius: 1.94rem;
     display: flex;
@@ -658,6 +671,7 @@ a {
 
 a.disc-foot {
     width: 100%;
+    min-width: 200px;
     height: 2.8rem;
     margin: 20px auto 30px;
     background-color: #5865F2;
@@ -693,6 +707,8 @@ a.disc-foot img {
     margin: auto 0;
 }
 
+/* Break Points */
+
 @media screen and (min-width: 599px) {
     .copyright p {
         width: 70%;
@@ -702,15 +718,131 @@ a.disc-foot img {
 
     a.disc-foot {
         width: 100%;
-        max-width: 212px;
-        height: 3rem;
+        max-width: 250px;
+        height: 3.5rem;
     }
     
     a.disc-foot img {
-        width: 80%;
+        width: 75%;
         margin: auto;
     }
 
+    .foot-log h1 {
+        font-size: 2rem;
+    }
+
+    .foot-log .logo-textp1, .foot-log .logo-textp2 {
+        height: fit-content;
+    }
+
+    .foot-banner {
+        width: 150%;
+        height: fit-content;
+        min-height: 136px;
+        align-self: center;
     
+    }
+
+    .slide img {
+        top: 15px;
+        left: 70px;
+        max-width: 300px;
+    }
+
+    .nav label {
+        top: 30px;
+    }
+
+    .about img {
+        max-width: 360px;
+    }
+
+    .banner h1 {
+        text-align: center;
+    }
+
+    #menuToggle span {
+        left: 87%;
+    }
+
+    #menuToggle input {
+        left: 85%;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }   
     
+    .logo .logo-textp1, .logo .logo-textp2 {
+        height: fit-content;
+    }
+
+}
+
+@media screen and (min-width: 659px) {
+    .slide img {
+        left: 100px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .slide img {
+        left: 130px;
+    }
+    
+    .nav-dots .nav-dot {
+        top: 10px;
+    }
+
+    .foot-log {
+        max-width: 480px;
+    }
+
+}
+
+@media screen and (min-width: 819px) {
+    .slide img {
+        left: 150px;
+        top: 30px;
+    }
+
+    .join-items {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (min-width: 899px) {
+    .slide img {
+        left: 180px;
+    }
+}
+
+@media screen and (min-width: 979px) {
+    .slide img {
+        left: 220px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .slide img {
+        left: 230px;
+        top: 60px;
+    }
+
+    .nav-dots .nav-dot {
+        top: 40px;
+    }
+
+    .nav label {
+        top: 85px;
+    }
+
+    .banner h1 {
+        max-width: 760px;
+    }
 }
