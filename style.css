@@ -109,6 +109,7 @@ p {
     height: fit-content;
     flex-wrap: nowrap;
     margin: auto 0;
+    user-select: none;
 }
 
 .logo-textp1 {
@@ -626,7 +627,25 @@ a.disc-foot img {
     }
 }
 
-@media screen and (min-width: 480px;) {
-    
+@media screen and (min-width: 479px) {
+    .logotext {
+        font-size: 0.7rem;
+    }
+
+    .logo-textp1, .logo-textp2 {
+        height: fit-content;
+    }
+
+    .banner h1 {
+        text-align: center;
+    }
+
+    .container {
+        height: 60vh;
+    }
+
+    .container .image img {
+        height: 60vh;
+    }
 }
 
