@@ -79,99 +79,35 @@
     <div class="gallery section">
         <h2>Gallery</h2>
         <p class="top-p bot-p">Click or tap on the sides of the image bubble to flick between images.</p>
-        <div class="mob-gallery">
-            <ul class="slides">
-                <!--Slide 1-->
-                <input type="radio" name="radio-btn" id="img-1" checked />
-                <li class="slide-container">
-                    <div class="slide">
-                        <div class="i-slide-container">
-                            <img src="./images/Gallery1.png"/>
-                        </div>
-                </div>
-                    <div class="nav">
-                        <label for="img-6" class="prev"></label>
-                        <label for="img-2" class="next"></label>
-                    </div>
-                </li>
-            
-              <!--Slide 2-->
-                <input type="radio" name="radio-btn" id="img-2" />
-                <li class="slide-container">
-                    <div class="slide">
-                        <div class="i-slide-container">
-                            <img src="./images/Gallery2.png"/>
-                        </div>
-                    </div>
-                    <div class="nav">
-                        <label for="img-1" class="prev"></label>
-                        <label for="img-3" class="next"></label>
-                    </div>
-                </li>
-            
-                <!--Slide 3-->
-                <input type="radio" name="radio-btn" id="img-3" />
-                <li class="slide-container">
-                    <div class="slide">
-                        <div class="i-slide-container">
-                            <img src="./images/Gallery3.png"/>
-                        </div>
-                    </div>
-                    <div class="nav">
-                        <label for="img-2" class="prev"></label>
-                        <label for="img-4" class="next"></label>
-                    </div>
-                </li>
-              <!--slide 4-->
-                <input type="radio" name="radio-btn" id="img-4" />
-                <li class="slide-container">
-                    <div class="slide">
-                        <div class="i-slide-container">
-                            <img src="./images/Gallery4.png"/>
-                        </div>
-                    </div>
-                    <div class="nav">
-                        <label for="img-3" class="prev"></label>
-                        <label for="img-5" class="next"></label>
-                    </div>
-                </li>
-            
-                <!--Slide 5-->
-                <input type="radio" name="radio-btn" id="img-5" />
-                <li class="slide-container">
-                    <div class="slide">
-                        <div class="i-slide-container">
-                            <img src="./images/Gallery5.png"/>
-                        </div>
-                    </div>
-                    <div class="nav">
-                        <label for="img-4" class="prev"></label>
-                        <label for="img-6" class="next"></label>
-                    </div>
-                </li>
-
-                <!--Slide 6-->
-                <input type="radio" name="radio-btn" id="img-6" />
-                <li class="slide-container">
-                    <div class="slide">
-                        <div class="i-slide-container">
-                            <img src="./images/Gallery6.png"/>
-                        </div>
-                    </div>
-                    <div class="nav">
-                        <label for="img-5" class="prev"></label>
-                        <label for="img-1" class="next"></label>
-                    </div>
-                </li>
-                <li class="nav-dots">
-                    <label for="img-1"class="nav-dot"id="img-dot-1"></label>
-                    <label for="img-2"class="nav-dot"id="img-dot-2"></label>
-                    <label for="img-3"class="nav-dot"id="img-dot-3"></label>
-                    <label for="img-4"class="nav-dot"id="img-dot-4"></label>
-                    <label for="img-5"class="nav-dot"id="img-dot-5"></label>
-                    <label for="img-6"class="nav-dot"id="img-dot-6"></label>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="image">
+                <img src="./images/img1.png" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/img2.png" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/img3.png" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/img4.png" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/img5.png" alt="">
+            </div>
+    
+            <div class="slide-button">
+                <a onclick="nextimg(-1)" class="prev">&#10094;</a>
+                <a onclick="nextimg(1)" class="next">&#10095;</a>
+            </div>
+    
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
         </div>  
     </div>
     <div class="join section">
@@ -233,5 +169,44 @@
             <p>This website is prtected by copyright laws registered to the breakfast club inc.</p>
         </div>
     </div>
+    <script>
+
+        var imageno = 1;
+        displayimg(imageno);
+
+        function nextimg(n) {
+            displayimg(imageno += n);
+        }
+
+        function currentSlide(n) {
+            displayimg(imageno = n)
+        }
+
+        function displayimg(n) {
+            var i;
+            var image = document.getElementsByClassName('image')
+            var dots = document.getElementsByClassName('dot')
+
+            if(n > image.length) {
+                imageno = 1;
+            }
+
+            if(n < 1) {
+                imageno = image.length;
+            }
+
+            for(i = 0; i < image.length; i++) {
+                image[i].style.display = 'none';
+            }
+
+            for(i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(' active', '');
+            }
+
+            image[imageno - 1].style.display = 'block';
+            dots[imageno - 1].className += ' active';
+        }
+
+    </script>
 </body>
 </html>
