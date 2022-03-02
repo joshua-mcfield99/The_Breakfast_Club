@@ -129,7 +129,7 @@ p {
 
 /* Nav */
 
-.deskNav {
+.desknav {
     display: none;
 }
 
@@ -743,5 +743,20 @@ a.disc-foot img {
         max-height: 270px;
         object-fit: cover;
         object-position: center;
+    }
+}
+
+@media screen and (min-width: 899px) {
+    .mobilenav {
+        display: none;
+    }
+
+    .desknav {
+        display: flex;
+    }
+
+    .dnav {
+        display: flex;
+        color: #282828;
     }
 }
