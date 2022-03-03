@@ -3,27 +3,28 @@
 @font-face {
     font-family: 'antre', serif;
     src: url(./fonts/antre.woff2), url(./fonts/antre.woff), url(./fonts/antre.ttf), url(./fonts/antre.svg), url(./fonts/antre.otf), url(./fonts/antre.eot);
+    font-display: fallback;
 }
 
 @font-face {
     font-family: 'Yu Gothic UI';
     src: url(./fonts/YuGothic-Bold.woff2), url(./fonts/YuGothic-Bold.woff), url(./fonts/YuGothic-Bold.svg), url(./fonts/YuGothic-Bold.eot), url(./fonts/YuGothic-Bold-01.ttf);
     font-weight: bold;
-    font-display: swap;
+    font-display: optional;
 }
 
 @font-face {
     font-family: 'Yu Gothic UI';
     src: url(./fonts/YuGothicUI-Light.woff2), url(./fonts/YuGothicUI-Light.woff), url(./fonts/YuGothicUI-Light.svg), url(./fonts/YuGothicUI-Light.eot), url(./fonts/YuGothicUI-Light-02.ttf);
     font-weight: lighter;
-    font-display: swap;
+    font-display: optional;
 }
 
 @font-face {
     font-family: 'Yu Gothic UI';
     src: url(./fonts/YuGothicUI-Regular.woff2), url(./fonts/YuGothicUI-Regular.woff), url(./fonts/YuGothicUI-Regular.svg), url(./fonts/YuGothicUI-Regular.eot), url(./fonts/YuGothicUI-Regular-02.ttf);
     font-weight: normal;
-    font-display: swap;
+    font-display: optional;
 }
 
 /* Resets / Base Styling*/
