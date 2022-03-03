@@ -402,7 +402,7 @@ p {
 
 .join {
     width: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.815)), url(./images/Join.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.815)), url(./images/Join.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
