@@ -803,11 +803,11 @@ a.disc-foot img {
         background-color: #282828;
     }
     .about-items {
-        max-width: 750px;
+        max-width: 900px;
     }
 
     .about img {
-        max-width: 300px;
+        max-width: 350px;
     }
 
     .ourMission img {
@@ -832,7 +832,7 @@ a.disc-foot img {
     }
 
     .dots {
-        left: 43%;
+        left: 42.8%;
     }
 
     .join-items {
@@ -860,7 +860,7 @@ a.disc-foot img {
     }
     
     .foot-links {
-        margin: 50px 0 0 0;
+        margin: 60px 0 0 0;
         width: 300px;
     }
 
