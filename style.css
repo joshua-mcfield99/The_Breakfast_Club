@@ -10,21 +10,21 @@
     font-family: 'Yu Gothic UI';
     src: url(./fonts/YuGothic-Bold.woff2), url(./fonts/YuGothic-Bold.woff), url(./fonts/YuGothic-Bold-01.ttf);
     font-weight: bold;
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face {
     font-family: 'Yu Gothic UI';
     src: url(./fonts/YuGothicUI-Light.woff2), url(./fonts/YuGothicUI-Light.woff), url(./fonts/YuGothicUI-Light-02.ttf);
     font-weight: lighter;
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face {
     font-family: 'Yu Gothic UI';
     src: url(./fonts/YuGothicUI-Regular.woff2), url(./fonts/YuGothicUI-Regular.woff), url(./fonts/YuGothicUI-Regular-02.ttf);
     font-weight: normal;
-    font-display: optional;
+    font-display: fallback;
 }
 
 /* Resets / Base Styling*/
