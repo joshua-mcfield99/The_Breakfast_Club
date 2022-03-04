@@ -10,11 +10,15 @@ The idea is that the club is to help people eat the most important meal of the d
 As someone who struggles to eat in the morning I often find myself looking for yummy breakfast recipes that don't take alot of time to make.
 
 So the point is to help people in the same situation as me.
-The website itself is currently just for looks and for a responsive design as part of my journey becoming a full-stack developer.
+The website itself is currently just for looks and for a responsive design project as part of my journey becoming a full-stack developer.
 
 Although this is a fake club it is possible that I make this a real thing, It's entirely up to the comments and feedback I get.
 
-### SO IF YOU'RE INTRESTED LET ME KNOW!
+### YOUR CODE IS TO CONDENSED...
+
+check the Beautified files for easy to read analasyis on my site
+
+## SO IF YOU'RE INTRESTED LET ME KNOW!
 
 You can contact me here:
 https://www.linkedin.com/in/josh-mcfield-366875222
