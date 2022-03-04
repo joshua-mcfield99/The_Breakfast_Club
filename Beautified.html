@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- Favicon Meta -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/images/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<!-- End Of Favicon Meta-->
+	<link rel="preload" href="./fonts/antre.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="style.css" as="style">
+	<link rel="preload" href="./fonts/YuGothicUI-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./fonts/YuGothic-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./fonts/YuGothicUI-Light.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="style.css">
+	<title>The Breakfast Club</title>
+</head>
+
+<body>
+	<!-- Head and Nav -->
+	<div class="head section">
+		<div class="logo">
+			<img src="./images/Logo.png" alt="The Breakfast Club logo">
+			<div class="logotext">
+				<h1 class="logo-textp1">The Breakfast</h1>
+				<h1 class="logo-textp2">Club</h1>
+			</div>
+		</div>
+		<div class="desknav">
+			<nav role="navigation">
+				<ul>
+					<li><a href="#">Home</a>
+					</li>
+					<li><a href="#">About Us</a>
+					</li>
+					<li><a href="#">Our Mission</a>
+					</li>
+					<li><a href="#">Gallery</a>
+					</li>
+					<li><a href="#" class="djoin-btn">Join Now!</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="mobilenav">
+			<nav role="navigation" class="nav">
+				<div class="mobile-nav" id="menuToggle">
+					<input type="checkbox"> <span></span>  <span></span>  <span></span>
+					<ul id="menu">
+						<a href="#">
+							<li>Home</li>
+						</a>
+						<a href="#">
+							<li>About Us</li>
+						</a>
+						<a href="#">
+							<li>Our Mission</li>
+						</a>
+						<a href="#">
+							<li>Gallery</li>
+						</a>
+						<a class="join-btn" href="#">
+							<li>Join Now!</li>
+						</a>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- Main -->
+	<div class="banner section">
+		<h1>Welcome to the breakfast club!</h1>
+	</div>
+	<div class="about section">
+		<h2>About us</h2>
+		<div class="about-items">
+			<img src="./images/AboutUs.jpg" alt="Avacado on toast">
+			<div class="about-p">
+				<p class="top-p">So who are we? Well... we are a collection of people from all over the world dedicated to helping people get inspired to make the most important meal of the day, BREAKFAST!!!</p>
+				<p>Is that it? So apart from trying to encourage people to eat breakfast, our members take pride in what we make uploading their breakfast's to our social group chats with a brief description of the recipe and how long it took.</p>
+				<p class="bot-p">Not only do we do that selected posts get put on our Instagram and get pinned on our discord for easy access and use by our members and followers.</p>
+			</div>
+		</div>
+	</div>
+	<!-- Our Mission -->
+	<div class="ourMission section">
+		<h2>Our Mission</h2>
+		<p class="top-p">It's simple our mission is to grow a healthier world encouraging people to make breakfast.</p>
+		<p class="bot-p">We want to build a community of people eager to help others and show off their breakfast's.</p>
+		<img src="./images/OurMission.png" alt="A group of people">
+	</div>
+	<!-- Load Js-->
+	<link rel="preload" href="script.js" as="script" defer>
+	<!-- Gallery -->
+	<div class="gallery section">
+		<h2>Gallery</h2>
+		<p class="top-p bot-p">Click/Tap on the arrows or dots to flick between images.</p>
+		<div class="container">
+			<div class="image">
+				<img src="./images/img1.jpg" alt="">
+			</div>
+			<div class="image">
+				<img src="./images/img2.jpg" alt="" loading="lazy">
+			</div>
+			<div class="image">
+				<img src="./images/img3.jpg" alt="" loading="lazy">
+			</div>
+			<div class="image">
+				<img src="./images/img4.jpg" alt="" loading="lazy">
+			</div>
+			<div class="image">
+				<img src="./images/img5.jpg" alt="" loading="lazy">
+			</div>
+			<div class="slide-button"><a onclick="nextimg(-1)" class="prev">&#10094;</a>  <a onclick="nextimg(1)" class="next">&#10095;</a>
+			</div>
+			<div class="dots"><span class="dot" onclick="currentSlide(1)"></span>  <span class="dot" onclick="currentSlide(2)"></span>  <span class="dot" onclick="currentSlide(3)"></span>  <span class="dot" onclick="currentSlide(4)"></span>  <span class="dot" onclick="currentSlide(5)"></span>
+			</div>
+		</div>
+	</div>
+	<!-- Join Section -->
+	<div class="join section">
+		<h2>Join Us Now</h2>
+		<p class="top-p bot-p">Become a member today and sign up for our newsletter and join our discord server!
+			<br>Also follow our <a href="#">Instagram!</a>
+		</p>
+		<div class="join-items">
+			<div class="new-sub">
+				<h3>Newsletter Subscription</h3>
+				<form action="">
+					<label for="name">Name :</label>
+					<input name="name" id="name">
+					<br>
+					<label for="email">Email :</label>
+					<input type="email" name="email" id="email">
+					<br>
+					<label for="country">Country :</label>
+					<input name="country" id="country">
+					<br>
+					<input class="sub-btn" type="button" value="Subscribe!">
+				</form>
+			</div>
+			<div class="disc-join">
+				<img src="./images/full_logo_blurple_RGB.png" alt="Discord" loading="lazy">
+				<p>Join Our Discord Server By Clicking Or Tapping The Link Below!</p>
+				<img src="./images/Icon ionic-md-arrow-down.png" alt="Arrow pointing to button" class="arrow" loading="lazy">
+				<br>
+				<a href="#">
+					<img src="./images/small_logo_white_RGB.png" alt="Discord server Link" loading="lazy">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="footer">
+		<img class="foot-banner" src="./images/footerbanner.png" alt="footer banner image" loading="lazy">
+		<div class="foot-main">
+			<div class="logo foot-log">
+				<img src="./images/Logo.png" alt="The Breakfast Club logo" loading="lazy">
+				<div class="logotext">
+					<h1 class="logo-textp1">The Breakfast</h1>
+					<h1 class="logo-textp2">Club</h1>
+				</div>
+			</div>
+			<div class="foot-links">
+				<h2>Useful Links</h2><a href="#">About Us</a>  <a href="#">Our Mission</a>  <a href="#">Gallery</a>  <a class="join-now" href="#">Join Now!</a>
+			</div>
+			<div class="social-links">
+				<a href="#">
+					<img src="./images/Instagram_Glyph_Gradient_RGB.png" loading="lazy">
+				</a>
+				<a href="#">
+					<img src="./images/Logo.png" loading="lazy">
+				</a>
+				<a class="disc-foot" href="#">
+					<img src="./images/small_logo_white_RGB.png" loading="lazy">
+				</a>
+			</div>
+		</div>
+		<div class="copyright">
+			<img src="./images/Icon metro-copyright.png" alt="Copyright icon" loading="lazy">
+			<p>This website is prtected by copyright laws registered to the breakfast club inc.</p>
+		</div>
+	</div>
+	<script src="./script.js" defer></script>
+</body>
+
+</html>
